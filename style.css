@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: 'Bebas Neue', cursive;
+/* font-family: 'EB Garamond', serif;
+font-family: 'Luckiest Guy', cursive; */
+}
+/* ----- Gloval classes -------- */
+
+.h-primary{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding-bottom: 1rem !important;
+}
+.p-font{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+
+}
+.respondive-img{
+    height: 15rem;
+    width: 15rem;
+}
+.h2-heading{
+    font-size: 2.2rem;
+
+}
+
+
+/* --x--- Gloval classes ----x---- */
+/* body{
+    background: url(./img2/bg1.jpg)no-repeat center center/cover;
+    height: 100vh;
+
+} */
+
+/* ----- navbar ----- */
+.navbar{
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    transition: all 1s ease-in-out;
+}
+
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+.logo img{
+    margin: 0 1rem;
+    height: 50px;
+    width: 50px;
+    transition: all .2s ease-in-out;
+}
+.logo img:hover{
+    transform: scale(1.1);
+    /* transform: rotate(360deg); */
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+li{
+   margin: 2rem .5rem;
+}
+li a:hover{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border: 2px transparent;
+    background-clip: padding-box;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+li a{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ---x-- navbar ---x-- */
+
+/* ------- home section -------- */
+
+.home{
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./img2/bg.jpg) no-repeat center center/cover;
+    /* height: 380px; */
+    /* height: 500px; */
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+Button{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border: 2px transparent;
+    background-clip: padding-box;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+/* ---x---- home section ----x---- */
+
+/* <!--------- services section ----------> */
+
+.services{
+    display: flex;
+    transition: all 1s ease-in-out;
+    position: relative;
+
+}
+.services::before{
+    content: "";
+    position: absolute;
+    background: url(./img2/food5.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+.service-items{
+    padding: 1.5rem;
+    border: 2px solid black;
+    margin: 2rem .9rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border: 2px transparent;
+    background-clip: padding-box;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    transition: all .2s ease-in-out;
+}
+.service-items:hover{
+    transform: scale(1.1);
+}
+
+.service-items h2{
+    margin-bottom: 1rem;
+}
+.service-section h1{
+    margin-top: 7rem;
+}
+
+
+/* <!----x----- services section -----x-----> */
+
+/* -------- client section --------- */
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 3rem .5rem;
+    margin: 1rem 0;
+}
+.client::before{
+    content: "";
+    position: absolute;
+    background: url(./img2/food2.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+.client-section h1{
+    margin-top: 2rem;
+    
+}
+
+.client-items{
+    transition: all 1s ease-in-out;
+    padding: 1rem;
+}
+
+.client-items img{
+    height: 7rem;
+    transition: all .2s ease-in-out;
+}
+.client-items img:hover{
+    transform: scale(1.5);
+}
+
+
+/* ----x---- client section -----x---- */
+
+/* --------- contact section --------- */
+.contact-items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+.contact-items::before{
+    content: "";
+    position:absolute;
+    background: url(./img2/contact\ us.webp)no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+
+}
+.contact-items form{
+    width: 40%;
+}
+.contact-items .contact-input .input{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+.contact-items .contact-input .input input,textarea{
+    width: 100%;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+
+/* ----x----- contact section -----x---- */
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    
+}
+/* ---------  responsibe website ---------*/
+@media only screen and (max-width:950px){
+   
+    .services{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .client{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:500px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul li{
+        margin: 0 ;
+    }
+    .navbar::before{
+        height: 18%;
+    }
+    .respondive-img{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width:330px){
+    .respondive-img{
+        max-width: 100%;
+    }
+    .navbar ul li a{
+        padding: 1rem .5rem;
+    }
+}
+
+
+
+/* ----x-----  responsibe website ----x-----*/
